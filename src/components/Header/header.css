@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.header h1 {
+    color: white;
+    font-family: "Copperplate";
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+    letter-spacing: 1px;
+}
+
+#ex {
+    color: yellow;
+    font-size: 70px;
+}
