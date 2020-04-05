@@ -1,0 +1,90 @@
+.restaurant-card {
+    width: 240px;
+    height: 380px;
+    padding: 15px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img" "name" "rating" "info" "action" "options";
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.589);
+}
+
+.img {
+    grid-area: img;
+    margin: auto;
+}
+
+.name {
+    grid-area: name;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.rating {
+    grid-area: rating;
+    margin: auto;
+}
+
+.info {
+    grid-area: info;
+    color: rgba(255, 255, 255, 0.466);
+}
+
+.info p {
+    display: inline;
+    margin-right: 18px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#reviews {
+    color: #5f5f5f;
+}
+
+.action {
+    grid-area: action;
+}
+
+.action button {
+    color: white;
+    width: 45%;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.action button {
+    background: #39B54A;
+    border: none;
+    outline-style: none;
+}
+
+.action button:hover {
+    background: rgb(32, 105, 42);
+    border: none;
+}
+
+.action button:nth-of-type(2) {
+    background: #333333;
+}
+
+.action button:nth-of-type(2):hover {
+    background: #636262;
+}
+
+.options {
+    grid-area: options;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.582);
+    letter-spacing: 2px;
+}
+
+.options p {
+    font-size: 12px;
+    display: inline;
+    margin-right: 40%;
+}
