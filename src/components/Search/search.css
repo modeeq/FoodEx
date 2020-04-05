@@ -1,0 +1,26 @@
+.searchBox {
+    background: #333333;
+    height: 40px;
+    width: 65%;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "search_input search_icon";
+    padding: .5% 0% .5% 2%;
+}
+
+.search_input {
+    grid-area: search_input;
+    background: #333333;
+    border: none;
+    outline-style: none;
+    color: white;
+    font-size: 90%;
+    width: 80%;
+}
+
+.search_icon {
+    grid-area: search_icon;
+    border-radius: 50px;
+}
