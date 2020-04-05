@@ -1,0 +1,41 @@
+.search_result {
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 120px 80px 1400px;
+    grid-template-areas: ". header ." ". searchBox ." ". result .";
+}
+
+.header {
+    grid-area: header;
+}
+
+.search_result .searchBox {
+    grid-area: searchBox;
+    width: 40%;
+    margin: auto;
+}
+
+.result {
+    grid-area: result;
+    color: white;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#result {
+    font-size: 25px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer .header {
+    background: #0e0e0e;
+}
