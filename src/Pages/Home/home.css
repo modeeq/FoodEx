@@ -1,0 +1,72 @@
+.home {
+    background: black;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 1fr 640px 80px 1500px 250px;
+    grid-template-areas: ". header ." ". main_img ." ". searchBox ." "suggestion suggestion suggestion" "footer footer footer"
+}
+
+.header {
+    grid-area: header;
+}
+
+.main_img {
+    grid-area: main_img;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+}
+
+.searchBox {
+    grid-area: searchBox;
+    margin: -30px 15%;
+}
+
+.suggestion {
+    grid-area: suggestion;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-areas: "r1" "r2" "r3";
+}
+
+.r1,
+.r2,
+.r3 {
+    color: white;
+    margin: 1%;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.r1 {
+    grid-area: r1;
+}
+
+.r2 {
+    grid-area: r2;
+}
+
+.r3 {
+    grid-area: r3;
+}
+
+.res_list {
+    display: flex;
+    flex: wrap;
+    overflow: hidden;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.home .header {
+    background: black;
+}
+
+.footer .header {
+    background: #0e0e0e;
+}
