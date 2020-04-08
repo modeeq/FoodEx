@@ -1,4 +1,5 @@
 import React from 'react';
+import './back.css';
 
 const Back = () => {
 	const back = () => {

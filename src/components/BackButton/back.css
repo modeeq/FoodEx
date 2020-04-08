@@ -1,4 +1,4 @@
-#back button {
+#back {
     position: absolute;
     left: 90%;
     top: 4%;
@@ -11,6 +11,6 @@
     outline: none;
 }
 
-#back button:hover {
+#back:hover {
     background: green;
 }
