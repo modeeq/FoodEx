@@ -5,11 +5,13 @@ const Search = () => {
 	return (
 		<div className='searchBox'>
 			<input className='search_input' type='text' placeholder='search...' />
-			<img
-				className='search_icon'
-				src='./images/search_icon.png'
-				alt='search icon'
-			/>
+			<a href='/search'>
+				<img
+					className='search_icon'
+					src='./images/search_icon.png'
+					alt='search icon'
+				/>
+			</a>
 		</div>
 	);
 };

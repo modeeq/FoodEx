@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/header.js';
 import Search from '../../components/Search/search.js';
 import RestaurantCard from '../../components/Restaurant-card/restaurant-card.js';
-import Footer from '../../components/Footer/footer.js';
 
 import './search.css';
 
