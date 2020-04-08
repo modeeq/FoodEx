@@ -1,13 +1,13 @@
 import React from 'react';
 import './restaurant-info.css';
 import Header from '../../components/Header/header.js';
+import BackButton from '../../components/BackButton/back';
+
 const RestaurantInfo = () => {
 	return (
 		<div className='about'>
 			<Header />
-			<button id='back' onClick={event => (window.location.href = '/')}>
-				back
-			</button>
+			<BackButton />
 			<div className='images'>
 				<img src='images/img.png' alt='restaurant' />
 				<img src='images/img2.png' alt='restaurant' />

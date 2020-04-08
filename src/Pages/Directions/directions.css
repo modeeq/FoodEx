@@ -21,20 +21,3 @@
     width: 100%;
     overflow: hidden;
 }
-
-.directions button {
-    position: absolute;
-    left: 90%;
-    top: 4%;
-    width: 70px;
-    height: 30px;
-    background: rgb(60, 172, 60);
-    border: none;
-    border-radius: 30px;
-    color: white;
-    outline: none;
-}
-
-.directions button:hover {
-    background: green;
-}

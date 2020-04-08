@@ -1,11 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header/header.js';
+import BackButton from '../../components/BackButton/back';
+
 import './directions.css';
 const Direction = () => {
-	const back = () => {
-		window.history.back();
-	};
-
 	return (
 		<div className='directions'>
 			<Header />
@@ -17,7 +15,7 @@ const Direction = () => {
 			<div className='direction'>
 				<img src='images/map.png' alt=''></img>
 			</div>
-			<button onClick={back}>Back</button>
+			<BackButton />
 		</div>
 	);
 };
