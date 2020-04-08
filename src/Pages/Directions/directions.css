@@ -1,0 +1,40 @@
+.directions {
+    background: black;
+    margin: auto;
+    height: 100vh;
+}
+
+.direction {
+    background: black;
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+}
+
+.direction h6 {
+    font-weight: 100;
+    color: gray;
+}
+
+.direction img {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.directions button {
+    position: absolute;
+    left: 90%;
+    top: 4%;
+    width: 70px;
+    height: 30px;
+    background: rgb(60, 172, 60);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+
+.directions button:hover {
+    background: green;
+}

@@ -22,7 +22,9 @@ const RestaurantCard = () => {
 				<button onClick={event => (window.location.href = '/about')}>
 					Learn More
 				</button>
-				<button>Directions</button>
+				<button onClick={event => (window.location.href = '/direction')}>
+					Directions
+				</button>
 			</div>
 			<div className='options'>
 				<p>Delivery</p>
