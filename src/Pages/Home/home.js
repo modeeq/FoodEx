@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../../Components/Header/header.js';
-import Search from '../../Components/Search/search.js';
-import RestaurantCard from '../../Components/Restaurant-card/restaurant-card.js';
-import Footer from '../../Components/Footer/footer.js';
+import Header from '../../components/Header/header.js';
+import Search from '../../components/Search/search.js';
+import RestaurantCard from '../../components/Restaurant-card/restaurant-card.js';
+import Footer from '../../components/Footer/footer.js';
 
 import './home.css';
 export default class Home extends Component {
@@ -25,6 +25,9 @@ export default class Home extends Component {
 							<RestaurantCard />
 							<RestaurantCard />
 							<RestaurantCard />
+							<RestaurantCard />
+							<RestaurantCard />
+							<RestaurantCard />
 						</div>
 					</div>
 
@@ -36,12 +39,18 @@ export default class Home extends Component {
 							<RestaurantCard />
 							<RestaurantCard />
 							<RestaurantCard />
+							<RestaurantCard />
+							<RestaurantCard />
+							<RestaurantCard />
 						</div>
 					</div>
 
 					<div className='r3'>
 						<p>Chinese Food </p>
 						<div className='res_list'>
+							<RestaurantCard />
+							<RestaurantCard />
+							<RestaurantCard />
 							<RestaurantCard />
 							<RestaurantCard />
 							<RestaurantCard />

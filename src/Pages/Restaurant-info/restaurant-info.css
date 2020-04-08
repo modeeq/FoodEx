@@ -1,0 +1,131 @@
+.about {
+    display: grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: .3fr 810px;
+    grid-template-areas: "header header" "images reviewsSection";
+    background: black;
+    letter-spacing: .5px;
+}
+
+.header {
+    grid-area: header;
+}
+
+#back {
+    position: absolute;
+    left: 90%;
+    top: 5%;
+}
+
+.images {
+    grid-area: images;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.images img {
+    margin: 2px;
+}
+
+.reviewsSection {
+    grid-area: reviewsSection;
+    overflow: scroll;
+    color: white;
+    padding: 2% 15%;
+}
+
+h1 {
+    color: white;
+    margin: 1%;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h5 {
+    color: rgba(255, 255, 255, 0.856);
+    margin: 1%;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tags {
+    text-align: center;
+}
+
+.tags button {
+    width: 118px;
+    height: 35px;
+    background: #29ABE2;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.r_options p {
+    margin-left: 25%;
+    font-size: 12px;
+    display: inline;
+    margin-right: 10%;
+}
+
+ul {
+    margin-top: 30px;
+    overflow: hidden;
+    list-style-type: none;
+    border-bottom: 2px solid rgba(138, 138, 138, 0.705);
+}
+
+li {
+    float: left;
+    color: #f2f2f2;
+    padding: 5px 14px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#rating {
+    height: 20px;
+    margin-top: -10px;
+    float: right;
+}
+
+li:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.reviews {}
+
+.review {
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+    border-bottom: 2px solid rgba(138, 138, 138, 0.32)
+}
+
+.review img {
+    height: 20px;
+}
+
+.review h6 {
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.review p {
+    color: rgba(255, 255, 255, 0.87);
+    line-height: 20px;
+    font-size: 12px;
+}

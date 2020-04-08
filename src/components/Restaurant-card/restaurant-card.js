@@ -19,7 +19,9 @@ const RestaurantCard = () => {
 				<p>open now</p>
 			</div>
 			<div className='action'>
-				<button>Learn More</button>
+				<button onClick={event => (window.location.href = '/about')}>
+					Learn More
+				</button>
 				<button>Directions</button>
 			</div>
 			<div className='options'>
