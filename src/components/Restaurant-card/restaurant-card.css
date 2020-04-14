@@ -12,15 +12,15 @@
 
 .img {
     grid-area: img;
-    margin: auto;
 }
 
 .name {
     grid-area: name;
-    font-size: 15px;
+    font-size: 85%;
     font-weight: bold;
     margin: auto;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .rating {
@@ -28,14 +28,20 @@
     margin: auto;
 }
 
+.rating img {
+    margin-left: 25%;
+    width: 35%;
+}
+
 .info {
     grid-area: info;
+    margin: auto;
     color: rgba(255, 255, 255, 0.466);
 }
 
 .info p {
     display: inline;
-    margin-right: 18px;
+    margin-right: 12px;
     font-size: 12px;
     font-weight: 100;
 }
@@ -51,7 +57,7 @@
 .action button {
     color: white;
     width: 45%;
-    height: 30px;
+    height: 25px;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 50px;
@@ -79,12 +85,12 @@
 .options {
     grid-area: options;
     margin: 10px;
-    color: rgba(255, 255, 255, 0.582);
+    color: rgba(142, 142, 142, 0.86);
     letter-spacing: 2px;
 }
 
 .options p {
     font-size: 12px;
     display: inline;
-    margin-right: 40%;
+    margin-right: 13%;
 }

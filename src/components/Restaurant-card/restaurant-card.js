@@ -1,34 +1,51 @@
 import React from 'react';
 import './restaurant-card.css';
 
-const RestaurantCard = () => {
+const RestaurantCard = props => {
 	return (
 		<div className='restaurant-card'>
 			<div className='img'>
-				<img src='./images/img2.png' alt='food' />
+				<img src={props.restaurant.thumb} alt='food' />
 			</div>
 			<div className='name'>
-				<p>Atlanta Breakfast Club</p>
+				<p>{props.restaurant.name}</p>
 			</div>
 			<div className='rating'>
-				<img src='images/rating.png' alt='rating' />
+				{/* round rating to closest .5 */}
+				<img
+					src={
+						'images/rating/' +
+						Math.ceil(props.restaurant.user_rating.aggregate_rating / 0.5) *
+							0.5 +
+						'.png'
+					}
+					alt='rating'
+				/>
 			</div>
 			<div className='info'>
-				<p> cafe, Desserts</p>
-				<p id='reviews'>5 reviews</p>
-				<p>open now</p>
+				<p>{props.restaurant.cuisines.split(',')[0]}</p>
+				<p id='reviews'>{props.restaurant.all_reviews_count} reviews</p>
+				<p>{props.restaurant.location.locality.split('/')[0]}</p>
 			</div>
 			<div className='action'>
-				<button onClick={event => (window.location.href = '/about')}>
+				<button
+					onClick={event =>
+						(window.location.href = '/about/' + props.restaurant.id)
+					}
+				>
 					Learn More
 				</button>
-				<button onClick={event => (window.location.href = '/direction')}>
+				<button
+					onClick={event =>
+						(window.location.href = '/direction/' + props.restaurant.id)
+					}
+				>
 					Directions
 				</button>
 			</div>
 			<div className='options'>
-				<p>Delivery</p>
-				<p>Takeaways</p>
+				<p>{props.restaurant.phone_numbers.substring(0, 14)}</p>
+				<p>10 miles</p>
 			</div>
 		</div>
 	);
