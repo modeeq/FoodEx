@@ -14,7 +14,7 @@ const RestaurantCard = props => {
 				{/* round rating to closest .5 */}
 				<img
 					src={
-						'images/rating/' +
+						'/images/rating/' +
 						Math.ceil(props.restaurant.user_rating.aggregate_rating / 0.5) *
 							0.5 +
 						'.png'
@@ -25,7 +25,7 @@ const RestaurantCard = props => {
 			<div className='info'>
 				<p>{props.restaurant.cuisines.split(',')[0]}</p>
 				<p id='reviews'>{props.restaurant.all_reviews_count} reviews</p>
-				<p>{props.restaurant.location.locality.split('/')[0]}</p>
+				<p>{props.restaurant.location.locality.split(',')[0]}</p>
 			</div>
 			<div className='action'>
 				<button

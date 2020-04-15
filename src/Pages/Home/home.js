@@ -20,7 +20,7 @@ export default class Home extends Component {
 
 	loadData = (lat, lon) => {
 		const api = 'https://developers.zomato.com/api/v2.1/search?';
-		const user_key = '*****';
+		const user_key = '**';
 		const urls = [
 			api +
 				'establishment_type=18&radius=50&count=10&lat=' +

@@ -12,6 +12,7 @@
 
 .img {
     grid-area: img;
+    margin: auto;
 }
 
 .name {
@@ -29,7 +30,7 @@
 }
 
 .rating img {
-    margin-left: 25%;
+    margin-left: 32%;
     width: 35%;
 }
 

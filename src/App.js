@@ -11,7 +11,7 @@ function App() {
 		<div className='App'>
 			<BrowserRouter>
 				<Route exact path='/' component={Home} />
-				<Route path='/Search' component={Search} />
+				<Route path='/Search/:term/:radius' component={Search} />
 				<Route path='/About' component={About} />
 				<Route path='/direction' component={Directions} />
 			</BrowserRouter>

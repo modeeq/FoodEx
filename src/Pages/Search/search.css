@@ -1,9 +1,9 @@
 .search_result {
     background: black;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 120px 80px 1400px;
-    grid-template-areas: ". header ." ". searchBox ." ". result .";
+    grid-template-columns: 10fr;
+    grid-template-rows: 120px 80px;
+    grid-template-areas: "header" "searchBox" "result";
 }
 
 .header {
