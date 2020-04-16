@@ -5,7 +5,14 @@ const RestaurantCard = props => {
 	return (
 		<div className='restaurant-card'>
 			<div className='img'>
-				<img src={props.restaurant.thumb} alt='food' />
+				<img
+					src={
+						props.restaurant.thumb
+							? props.restaurant.thumb
+							: '/images/restaurant.png'
+					}
+					alt='restaurant'
+				/>
 			</div>
 			<div className='name'>
 				<p>{props.restaurant.name}</p>
