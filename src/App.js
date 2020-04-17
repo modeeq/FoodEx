@@ -12,7 +12,7 @@ function App() {
 			<BrowserRouter>
 				<Route exact path='/' component={Home} />
 				<Route path='/Search/:term/:radius' component={Search} />
-				<Route path='/About' component={About} />
+				<Route path='/About/:id' component={About} />
 				<Route path='/direction' component={Directions} />
 			</BrowserRouter>
 		</div>

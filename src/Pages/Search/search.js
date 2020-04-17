@@ -18,7 +18,7 @@ export default class Search_result extends Component {
 		};
 	}
 	loadData = () => {
-		const user_key = '***';
+		const user_key = '9a0f3f8754cb1402df5fed34478ceb40';
 		const url =
 			'https://developers.zomato.com/api/v2.1/search?q=' +
 			this.state.term +

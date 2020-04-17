@@ -19,6 +19,15 @@ export default class Search extends React.Component {
 			radius: e.target.value
 		});
 	};
+	handleSubmit = () => {
+		console.log('er');
+		if (this.state.search !== '') {
+			window.location.href =
+				'/search/' + this.state.search + '/' + this.state.radius;
+		} else {
+			alert('please enter a valid restaurants name or food type ');
+		}
+	};
 
 	render(props) {
 		return (
@@ -35,13 +44,7 @@ export default class Search extends React.Component {
 					placeholder='radius'
 					onChange={this.handleSearch_radius.bind(this)}
 				/>
-				<button
-					className='submit'
-					onClick={event =>
-						(window.location.href =
-							'/search/' + this.state.search + '/' + this.state.radius)
-					}
-				>
+				<button className='submit' onClick={this.handleSubmit}>
 					Search
 				</button>
 			</div>

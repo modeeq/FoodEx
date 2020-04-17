@@ -1,10 +1,10 @@
 .about {
     display: grid;
     grid-template-columns: 43% 57%;
-    grid-template-rows: .3fr 810px;
-    grid-template-areas: "header header" "images reviewsSection";
+    grid-template-rows: 0.3fr 810px;
+    grid-template-areas: 'header header' 'images reviewsSection';
     background: black;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
 }
 
 .header {
@@ -53,15 +53,16 @@ h5 {
 }
 
 .tags button {
-    width: 118px;
-    height: 35px;
-    background: #29ABE2;
+    width: 80%;
+    height: 45px;
+    background: black;
     color: white;
     border-radius: 5px;
     margin: 5px;
-    font-size: 12px;
+    padding: 1px;
+    font-size: 20px;
     font-weight: 500;
-    border: none;
+    border: 2px dotted yellow
 }
 
 .footer {
@@ -92,8 +93,15 @@ li {
 
 #rating {
     height: 20px;
-    margin-top: -10px;
-    float: right;
+    margin-top: -5px;
+    position: relative;
+   left: 38%;
+}
+#rating:hover{
+    background: black;
+}
+#rating img{
+	width: 35%;
 }
 
 li:hover {
@@ -105,13 +113,12 @@ li:hover {
 
 .review {
     width: 100%;
-    height: 140px;
     margin-top: 10px;
-    border-bottom: 2px solid rgba(138, 138, 138, 0.32)
+    border-bottom: 2px solid rgba(138, 138, 138, 0.32);
 }
 
 .review img {
-    height: 20px;
+    height: 15px;
 }
 
 .review h6 {
@@ -121,5 +128,10 @@ li:hover {
 .review p {
     color: rgba(255, 255, 255, 0.87);
     line-height: 20px;
+    letter-spacing: 1.1px;
     font-size: 12px;
+}
+.active{
+    background-color: #ddd;
+    color: black;
 }
